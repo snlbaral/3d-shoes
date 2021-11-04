@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Commerce</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/vanilla-picker@2"></script>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "./build/three.module.js",
+                "three/examples/controls/OrbitControls": "./jsm/controls/OrbitControls.js",
+                "three/examples/jsm/loaders/DracoLoader": "./jsm/loaders/DracoLoader.js"
+            }
+        }
+    </script>
+</head>
+<body>
+    
+  <div class="container-model">
+        <div class="color-picker"></div>
+        <div class="scene_box">
+            <div class="canvas_scene">
+                <div class="progress-container">
+                    <div class="progress-hero">
+                        <span class="percentage">0%</span>
+                        <div class="progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <canvas class="model"></canvas>
+            </div>
+            <div class="product-details">
+                <div>
+                    <h1>Nike</h1>
+                    <div class="price">
+                        <div class="original-price">Rs. 2000</div>
+                        <div class="discounted-price">Rs. 1000</div>
+                    </div>
+                    <div class="buy">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                    
+                    <p class="vans">This pair of custom, hand painted White Vans Era shoes features my whimsical design of an eagle feather running up the side of each shoe. The color is different shades of blue. This order is customizable as I can paint this one-of-a-kind, original design on any color TOMS, Vans or Converse shoe. Price includes the shoes plus the artwork. Various sizes available. Crafted with a soft footbed, double-stitched vamp, padded tongue and lining, and the Vans signature waffle sole. White canvas. Made in the USA.</p>
+
+                    <p class="new_balance_997">New Balance 997h is a running shoe that is true to its size. It is a tribute or successor to 997. The sneaker consists of retro design that brings back memories from the 90s. It has a high quality upper with ENCAP midsole. The midsole of New Balance 997h adds support and stability to the sneaker. It also incorporates ABZORB cushioning that enhances the comfort of the sneaker.</p>
+
+                    <p class="nike_air_jordan">Paying tribute to Michael Jordan's college alma mater, the Air Jordan 1 Retro High OG 'University Blue' features a University of North Carolina look. Built entirely with leather, the shoe's upper appears in a mix of white and University Blue, contrasted by black on the Swoosh, collar, laces and 'Wings' logo. Perforations on the toe box provide breathability, while underfoot, the Air midsole gives way to a concentric outsole with a brighter shade of blue.</p>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="select-box">
+            <select class="shoe_change">
+                <option>Select A Shoe</option>
+                <option value="nike_air_jordan" selected>Nike Air Jordan</option>
+                <option value="vans">Vans</option>
+                <option  value="new_balance_997">New Balance 997</option>
+            </select>
+        </div>
+
+
+
+    </div>
+
+    <script type="module" src="./client.js"></script>
+</body>
+</html>
